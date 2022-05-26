@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Myriad Pro", "Myriad", "Liberation Sans", "Nimbus Sans L",
+      "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .bg {
+    background-color: brown;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+  }
