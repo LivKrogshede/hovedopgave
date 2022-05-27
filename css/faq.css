@@ -9,7 +9,6 @@
 .faq-nav {
     list-style-type: none;
     width: 25%;
-    position: fixed;
     height: 100%;
     overflow: auto;
   }
@@ -38,9 +37,9 @@
 /*horizontal top nav-bar */
   
 .cat-faq {
+    display: flex;
     color: #424141;
     list-style-type: none;
-    overflow: hidden;
   }
 
 .nav2  {
@@ -72,15 +71,30 @@
 
   .wrapper {
       display: flex;
-      position: absolute;
+      background-color: #ffffff90;
+      border-radius: 17px;
+      margin-top: 25vh;
+      margin-right: 5vw;
+      padding-left: 2vw;
+      width: 60vw;
+      height: 60vh;
   }
 
   .questions {
-      display: flex;
+      display: flex;   
       flex-direction: column;
+      padding-top: 10vh;
   }
 
   .content-faq {
       display: flex;
+      background-color: #ffff;
+      width: 20vw;
+      margin: 100px;
+      padding: 25px;
+      line-height: 20px;
+      border-radius: 17px;
+      overflow: scroll;
   }
+  
 
