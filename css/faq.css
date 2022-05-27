@@ -149,3 +149,10 @@ button {
 button:focus {
   outline: orange 5px auto;
 }
+
+/* centrer tekst */
+
+.center {
+  display: flex;
+  flex-direction: row;
+}

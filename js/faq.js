@@ -1,9 +1,14 @@
-const btn = document.getElementById("btn");
-
-btn.addEventListener('click', function handleClick() {
-    console.log("wtf");
-    btn.innerHTML = 'Button clicked';
-  });
+window.onload = function reset() {
+    var hens = document.getElementById("hens");
+    var cows = document.getElementById("cows");
+    var ducks = document.getElementById("ducks");
+    var pigs = document.getElementById("pigs");
+    hens.classList.add("hidden");
+    hens.classList.add("content-faq");
+    ducks.classList.add("hidden");
+    cows.classList.add("hidden");
+    pigs.classList.add("hidden");
+}
 
 //får info om køer frem
 function cowsFaq() {
@@ -31,6 +36,7 @@ function hensFaq() {
     pigs.classList.add("hidden");
 }
 
+//får info om grise frem
 function pigsFaq() {
     var hens = document.getElementById("hens");
     var cows = document.getElementById("cows");
@@ -43,6 +49,8 @@ function pigsFaq() {
     pigs.classList.remove("hidden");    
 }
 
+
+//får info om ænder frem 
 function ducksFaq() {
     var hens = document.getElementById("hens");
     var cows = document.getElementById("cows");
