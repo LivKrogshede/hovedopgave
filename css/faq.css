@@ -37,17 +37,6 @@
     color: white;
   }
 
-/*horizontal top nav-bar */
-  
-.cat-faq {
-    display: flex;
-    position: fixed; 
-    top: 18vh;
-    right: 0.6vw;
-    color: #424141;
-    list-style-type: none;
-  }
-
 .nav2  {
     float: right;
   }
@@ -148,6 +137,20 @@
 
 /* knap styling */
 
+.button {
+  margin-left: 120px;
+}
+
+
+.button2 {
+  margin-left: 125px;
+}
+
+.button1 {
+  margin-left: 105px;
+}
+
+
 button {
   all: unset;
   cursor: pointer;
@@ -163,3 +166,31 @@ button:focus {
   padding-top: 10px;
   text-align: center;
 }
+
+
+/*horizontal top nav-bar */  
+@media screen and (min-height: 901px) { 
+  .cat-faq {
+      display: flex;
+      position: relative; 
+      top: 23vh;
+      right: 0.5vw;
+      color: #424141;
+      list-style-type: none;
+    }
+  }
+
+/*horizontal top nav-bar */
+@media screen and (max-height: 900px) { 
+  .cat-faq {
+      display: flex;
+      position: relative; 
+      top: 18vh;
+      right: 0.6vw;
+      color: #424141;
+      list-style-type: none;
+    }
+  }
+
+
+
