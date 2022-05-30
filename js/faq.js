@@ -125,6 +125,9 @@ function maskFaq() {
 function maskFaqC() {
     document.getElementById("maskineri").classList.remove("hidden");
     document.getElementById("maskineri").classList.add("content-faq");
+
+    //icon 
+    document.getElementById("maskI").classList.remove("hidden");
 }
 
 function dyrFaq() {
