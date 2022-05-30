@@ -11,8 +11,9 @@
 
 .faq-nav {
     list-style-type: none;
-    width: 25%;
-    height: 100%;
+    position: fixed; 
+    right: 62vw; 
+    top: 30vh; 
   }
 
 .nav1 a {

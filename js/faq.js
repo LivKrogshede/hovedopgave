@@ -26,7 +26,6 @@ function cowsFaq() {
 }
 
 //får info om høns frem
-
 function hensFaq() {
     var hens = document.getElementById("hens");
     var cows = document.getElementById("cows");
