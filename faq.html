@@ -22,7 +22,7 @@
             <!--horizontal menu-->
             <nav class="cat-faq">
                 <li class="nav2"><a href="#">Dit landbrug</a></li>
-                <li class="nav2"><a id="dyrMenu" class="active" onclick="dyrFaq()" href="#">Dit dyrehold</a></li>
+                <li class="nav2"><a id="dyrMenu" onclick="dyrFaq()" class="active" onclick="dyrFaq()" href="#">Dit dyrehold</a></li>
                 <li class="nav2"><a href="#">Frugt og grønt</a></li>
                 <li class="nav2"><a id="maskMenu" onclick="maskFaq()" href="#">Maskineri</a></li>
             </nav>
@@ -74,6 +74,12 @@ Dog efterhånden som vi får oplysninger omkring de svin, som forefindes på bed
                     <h2 class="heading">Her kan du læse om hvordan din data er beregnet</h2>
                     <h2>Hvordan er data på dine maskiner beregnet? <button class="button2" id="btn1" onclick="maskFaqC()">></button></h2>
                 </div>
+                    <div id="maskineri" class="hidden">
+                        <p>
+                            For nuværende har vi ikke inkluderet CO2 eq emissions omkostningerne ved produktionen af maskinerne, men gør kun brug af henholdsvis diesel og KWH ved brug, i forhold til, hvad emissionen er for disse. I følge danske videnskabelige undersøgelser, samt et eventuelt forbrug af vand, som opgøres seperat.
+                        </p>
+                
+                    </div>
             </div>
         </div>
     </body>

@@ -88,8 +88,9 @@ function ducksFaq() {
     document.getElementById("pigI").classList.add("hidden");     
 }
 
-//får faq om maskineri frem 
+//horizontal menu functions 
 
+//får faq om maskineri frem 
 function maskFaq() {
     //get the content of data/dit dyrehold to be hidden 
     document.getElementById("dyrFaq").classList.add("hidden");
@@ -97,4 +98,46 @@ function maskFaq() {
     //makes the menu breadcrumb go to maskineri
     document.getElementById("dyrMenu").classList.remove("active");
     document.getElementById("maskMenu").classList.add("active");
+
+    //unhides the section of maskineri spørgsmål 
+    document.getElementById("content-mask").classList.remove('hidden');
+
+    //makes sure that the answers for data/dyrehold becomes hidden
+    var hens = document.getElementById("hens");
+    var cows = document.getElementById("cows");
+    var pigs = document.getElementById("pigs");
+    var ducks = document.getElementById("ducks");
+    hens.classList.add("hidden");
+    cows.classList.add("hidden");
+    pigs.classList.add("hidden");
+    ducks.classList.add("hidden");
+    ducks.classList.add("hidden");
+
+    //icons
+    document.getElementById("duckI").classList.add("hidden");
+    document.getElementById("cowI").classList.add("hidden"); 
+    document.getElementById("henI").classList.add("hidden");
+    document.getElementById("pigI").classList.add("hidden");
+
+}
+
+//makes the question about maskineri visible
+function maskFaqC() {
+    document.getElementById("maskineri").classList.remove("hidden");
+    document.getElementById("maskineri").classList.add("content-faq");
+}
+
+function dyrFaq() {
+    //get the content of data/dit maskineri to be hidden 
+    document.getElementById("content-mask").classList.add("hidden");
+
+    //makes the menu breadcrumb go to maskineri
+    document.getElementById("maskMenu").classList.remove("active");
+    document.getElementById("dyrMenu").classList.add("active");
+
+    //unhides the section of maskineri spørgsmål 
+    document.getElementById("dyrFaq").classList.remove('hidden');
+
+    //makes sure that the answers for data/maskineri becomes hidden
+    document.getElementById("maskineri").classList.add("hidden");
 }
