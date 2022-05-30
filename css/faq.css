@@ -84,6 +84,8 @@
       padding-top: 10vh;
   }
 
+  
+
   .content-faq {
       display: flex;
       position: fixed;
@@ -178,6 +180,25 @@ button:focus {
       color: #424141;
       list-style-type: none;
     }
+  
+  /*sizing and placement of icons*/ 
+  .icon {
+    width: 5vh;
+  }
+
+  .i-con {
+    position: fixed;
+    right:210px;
+    top: 33vh;
+  }
+
+  .questions h2 {
+    margin: 10px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
   }
 
 /*horizontal top nav-bar */
@@ -190,7 +211,26 @@ button:focus {
       color: #424141;
       list-style-type: none;
     }
+  
+    
+  /*sizing and placement of icons*/ 
+  .icon {
+    width: 5vh;
   }
+
+  .i-con {
+    position: fixed;
+    right:190px;
+    top: 33vh;
+  }
+
+  .questions h2 {
+    margin: 10px;
+  }
+
+  }
+
+
 
 
 

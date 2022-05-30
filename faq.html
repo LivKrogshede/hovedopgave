@@ -12,22 +12,31 @@
 </head>
     <body class="bg" >
         <div class="faq">
+            <!--vertical menu-->
                 <ul class="faq-nav">
                     <li class="nav1"><a href="#">Om os</a></li>
                     <li class="nav1"><a href="#">Spørgeskema</a></li>
                     <li class="nav1"><a class="active" href="#">Data</a></li>
                     <li class="nav1"><a href="#">Bliv en del af os</a></li>
                 </ul>
+            <!--horizontal menu-->
             <nav class="cat-faq">
-                <li class="nav2"><a href="#">Maskineri</a></li>
-                <li class="nav2"><a href="#">Frugt og grønt</a></li>
-                <li class="nav2"><a class="active" href="#">Dit dyrehold</a></li>
                 <li class="nav2"><a href="#">Dit landbrug</a></li>
+                <li class="nav2"><a id="dyrMenu" class="active" onclick="dyrFaq()" href="#">Dit dyrehold</a></li>
+                <li class="nav2"><a href="#">Frugt og grønt</a></li>
+                <li class="nav2"><a id="maskMenu" onclick="maskFaq()" href="#">Maskineri</a></li>
             </nav>
+            <!--FAQ page / data / dit dyrehold-->
             <div class="wrapper">              
-                    <h1 class="center">FAQ</h1>             
-                <div class="questions">
-                <h2>Her kan du læse om hvordan din data er beregnet</h2>
+                    <h1 class="center">FAQ</h1> 
+                    <div class="i-con">
+                    <img id="cowI" class="icon hidden" src="./assets/cow.png">
+                    <img id="henI" class="icon hidden" src="./assets/hen.png">
+                    <img id="duckI" class="icon hidden" src="./assets/duck.png">
+                    <img id="pigI" class="icon hidden" src="./assets/pig.png">
+                    </div>            
+            <div id="dyrFaq" class="questions">
+                <h2 class="heading">Her kan du læse om hvordan din data er beregnet</h2>
                 <h2>Hvordan er din data på køer beregnet? <button class="button2" id="btn1" onclick="cowsFaq()">></button></h2>
                 <h2>Hvordan er din data på grise beregnet? <button class="button" onclick="pigsFaq()">></button></h2>
                 <h2>Hvordan er din data på høns beregnet? <button class="button" onclick="hensFaq()">></button></h2>
@@ -60,7 +69,11 @@ Dog efterhånden som vi får oplysninger omkring de svin, som forefindes på bed
                 <div id="ducks" class="hidden">
                   <p>  Da ænders fysiologi og anatomi minder om høns, og da foderkonventeringsraten er sammenlignelig, anvender vi data for høns, som egentlig er dækkende for fjerkræ helt generelt. Derfor er udsagnet under høns også dækkende for ænder.</p>
                 </div>
-
+                <!--content data / dit maskineri-->
+                <div id="content-mask" class="questions hidden">
+                    <h2 class="heading">Her kan du læse om hvordan din data er beregnet</h2>
+                    <h2>Hvordan er data på dine maskiner beregnet? <button class="button2" id="btn1" onclick="maskFaqC()">></button></h2>
+                </div>
             </div>
         </div>
     </body>
