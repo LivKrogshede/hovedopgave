@@ -1,3 +1,6 @@
+/*Kode skrevet af Liv Krogshede */
+
+
 .faq {
     display: flex;
     float: right;
@@ -10,7 +13,6 @@
     list-style-type: none;
     width: 25%;
     height: 100%;
-    overflow: auto;
   }
 
 .nav1 a {
@@ -18,7 +20,7 @@
     color: #424141;
     background-color: #ffffff72;
     text-decoration: none;
-    border-radius: 13px;
+    border-radius: 13px 0px 0px 13px ;
     padding: 20px; 
     width: 200px;
     margin: 8px; 
@@ -50,7 +52,7 @@
     display: block;
     background-color: #ffffff72;
     color: #424141;
-    border-radius: 17px;
+    border-radius: 17px 17px 0px 0px;
     text-align: center;
     padding: 20px 10px;
     text-decoration: none;
@@ -71,6 +73,7 @@
 
   .wrapper {
       display: flex;
+      flex-direction: column;
       background-color: #ffffff90;
       border-radius: 17px;
       bottom: 100px;
@@ -153,6 +156,6 @@ button:focus {
 /* centrer tekst */
 
 .center {
-  display: flex;
-  flex-direction: row;
+  padding-top: 10px;
+  text-align: center;
 }

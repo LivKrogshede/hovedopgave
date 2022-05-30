@@ -1,3 +1,5 @@
+//dette script er skrevet af Liv Krogshede
+
 window.onload = function reset() {
     var hens = document.getElementById("hens");
     var cows = document.getElementById("cows");
