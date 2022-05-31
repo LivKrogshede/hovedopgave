@@ -129,6 +129,7 @@ function dyrFaq() {
     //get the content of data/dit dyrehold/about to be hidden 
     document.getElementById("content-mask").classList.add("hidden");
     document.getElementById("content-about").classList.add("hidden");
+   
 
     //makes the menu breadcrumb go to dyrehold
     document.getElementById("maskMenu").classList.remove("active");
@@ -151,12 +152,24 @@ function aboutFaq() {
     document.getElementById("content-mask").classList.add("hidden");
     document.getElementById("dyrFaq").classList.add("hidden");
     document.getElementById("maskineri").classList.add("hidden");
+    document.getElementById("cows").classList.add("hidden");
+    document.getElementById("hens").classList.add("hidden");
+    document.getElementById("pigs").classList.add("hidden");
+    document.getElementById("ducks").classList.add("hidden");
     //makes the right menu icon active 
     document.getElementById("datMen").classList.remove("active");
     document.getElementById("aboMen").classList.add("active");
     //hides the horizontal menu 
     document.getElementById("horMen").classList.add("hidden");
     document.getElementById("horMen").classList.remove("cat-faq");
+
+    //handles icon 
+    document.getElementById("logoI").classList.remove("hidden");
+    document.getElementById("duckI").classList.add("hidden");
+    document.getElementById("cowI").classList.add("hidden"); 
+    document.getElementById("henI").classList.add("hidden");
+    document.getElementById("pigI").classList.add("hidden");
+    document.getElementById("maskI").classList.add("hidden");
 }
 
 function dataFaq() {
@@ -173,6 +186,10 @@ function dataFaq() {
     //makes the right menu icon active 
     document.getElementById("datMen").classList.add("active");
     document.getElementById("aboMen").classList.remove("active");
+    document.getElementById("dyrMenu").classList.add("active");
+    document.getElementById("maskMenu").classList.remove("active");
+    //handles icon 
+    document.getElementById("logoI").classList.add("hidden");
 }
 
 //makes the about us content appear
@@ -182,7 +199,6 @@ function aboutFaqC() {
 }
 
 //makes the viden content appear
-
 function videnFaq() {
     document.getElementById("viden").classList.remove("hidden");
     document.getElementById("about").classList.add("hidden");
