@@ -21,18 +21,32 @@
   background-color: #ffffff;
   border: solid;
   border-color:  #424141;
+  border-width: thin;
   color:  #424141;
   padding: 5px;
-  text-align: center;
-  text-decoration: none;
   display: flex;
   float: right;
   font-size: 10px;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 200px;
+  cursor: pointer;
 }
 
 .infoBtn1 {
-    margin-right: 200px;
+    margin-right: 230px; 
+}
+
+.infoBtn2 {
+    margin-right: 150px;
+}
+
+.infoBtn3 {
+    margin-right: 155px;
+}
+
+.infoBtn5 {
+    margin-right: 150px;
 }
 
 .question {
@@ -41,5 +55,16 @@
 
 .question h3 {
     font-size: 15px;
+}
+
+.btnCh {
+    background-color: #ffffff;
+    border: solid;
+    border-color:  #424141;
+    border-width: thin;
+    color:  #424141;
+    width: 56px;
+    height: 25px;
+    border-radius: 5px;
 }
 
