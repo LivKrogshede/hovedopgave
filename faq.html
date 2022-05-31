@@ -14,15 +14,15 @@
         <div class="faq">
             <!--vertical menu-->
                 <ul class="faq-nav">
-                    <li class="nav1"><a href="#">Om os</a></li>
+                    <li class="nav1"><a id="aboMen" onclick="aboutFaq()" class="active" href="#">Om os</a></li>
                     <li class="nav1"><a href="#">Spørgeskema</a></li>
-                    <li class="nav1"><a class="active" href="#">Data</a></li>
+                    <li class="nav1"><a id="datMen" onclick="dataFaq()"  href="#">Data</a></li>
                     <li class="nav1"><a href="#">Bliv en del af os</a></li>
                 </ul>
             <!--horizontal menu-->
-            <nav class="cat-faq">
+            <nav id="horMen" class="hidden">
                 <li class="nav2"><a href="#">Dit landbrug</a></li>
-                <li class="nav2"><a id="dyrMenu" onclick="dyrFaq()" class="active" onclick="dyrFaq()" href="#">Dit dyrehold</a></li>
+                <li class="nav2"><a id="dyrMenu" class="active" onclick="dyrFaq()" href="#">Dit dyrehold</a></li>
                 <li class="nav2"><a href="#">Frugt og grønt</a></li>
                 <li class="nav2"><a id="maskMenu" onclick="maskFaq()" href="#">Maskineri</a></li>
             </nav>
@@ -35,15 +35,51 @@
                     <img id="duckI" class="icon hidden" src="./assets/duck.png">
                     <img id="pigI" class="icon hidden" src="./assets/pig.png">
                     <img id="maskI" class="icon hidden" src="./assets/iconmask.png">
-                    </div>            
-            <div id="dyrFaq" class="questions">
+                    </div>     
+                    <!--content data / om os-->
+                <div id="content-about" class="questions">
+                    <h2 class="heading">Her kan du læse om YourFootPrint</h2>
+                    <h2>Om os <button class="button2" onclick="aboutFaqC()">></button></h2>
+                    <h2>Vidensgrundlaget <button class="button2"  onclick="videnFaq()">></button></h2>
+                </div>
+                    <div id="about" class="content-faq hidden">
+                        <p>
+                            YourFootPrint eksisterer pga. et brændende ønske om at gøre det nemt, gennemsigtigt og overskueligt at beregne sit Co2 footprint, og på den måde bidrage til at mindske Co2 udledning.
+                            <br><br>
+                        YourFootPrint startede som en idé da founder Benjamin, besluttede sig for at beregne hans eget Co2 footprint, på Stålbækgård. Rapporten blev lavet tilbage i 2020 og er et flagskib for platformen. <br><br> Visionen fra YourFootPrints side er at dele erfaringer og viden, således at den grønne omstilling bliver lettere for små landbrug og på sigt landbruget generelt. <br><br>YourFootPrints vision er ikke bare tomme buzzord, men at vidensgrundlaget og beregningerne bagved er både gennemsigtige og overskuelige, for landmænd og forbrugere. 
+                        <br><br>Læs flagskibs rapporten her (Link). 
+                        <br><br>Læs mere om vidensgrundlaget her (Link). 
+                        </p>
+                
+                    </div>
+                    <div id="viden" class="content-faq hidden">
+                        <p>
+                            Your Footprint´s beregninger baseres på tilgangen fra GHG Protocol Agricultural Guidance – Interpreting the Corporate Accounting and Raporting Standard for the agricultural sector. Det betyder, at vi behandler udledninger (emissioner) og optagelse af Drivhusgasser (GHG). Det gør det muligt, at få en fuldstændig oversigt over, ens drivhusgas-emissioner, hvilket gør værktøjet til et brugbart management værktøj, i forhold til din drivshusgas-emission. 
+                            Beregneren er baseres på følgende fire principper;
+                                    <ul>
+                                    <li>Fuldstændighed</li>
+                                    <li>Gennemskuelighed</li>
+                                    <li>Præcision</li>
+                                    <li>Relevans</li>
+                                    </ul> 
+                                    Det betyder, at værktøjet er baseret på de nyeste tilgængelige videnskabelige undersøgelser (under creative commonen license 4.0), som behandler Danske forhold, i forhold til de enkelte dyrs udledninger i enten stadier eller i livscyklusanalyser, hvor vi bestræber os på at holde os til de enkelte dyrs emissioner, uden de videnskabelige livscyklusanalyser, hvor dyret, dets foder, markbruget, maskiner, transport, m.m. er inkluderet.<br><br> Det gør vi for at gøre udregningerne så præcise som muligt, i forhold til det enkelte landbrugs CO2-aftryk i ækvivalenter (ækv.). Det samme gør sig gældende for markbruget, hvor vi bestræber os på, kun at bruge data som kan henholdes til hektarer og under Danske forhold. Der kan dog ske undtagelser ved markbruget, men da accepterer vi kun videnskabelige undersøgelser, hvis den er gældende for lignende klimatiske forhold.<br><br>
+                                    For nuværende er æglæggende høns (på gården) og svins (på gården) udledninger baseret på livscyklusanalyser, hvor kvæg er baseret på undersøgelser i stadier.<br><br>
+                                    At arbejde ud fra de ovenstående 4 principper, gør at vi hele tiden udvikler på CO2 ækv. beregneren, ved hjælp af de nyeste tilgængelige videnskabelige undersøgelser. Det betyder også, at du kan blive bedt om, at opdatere dine data i Your Footprint og at der løbende implementeres nye målepunkter, som vil gøre CO2 ækv. udregningerne mere detaljerede. Det gør, at du som bruger, dine kunder og hvem der ellers måtte være interesserede får et mere detaljeret indblik i CO2 ækv. emissionerne fra dit landbrug og hvordan drivhusgasemissionerne kan blive reduceret.
+                                    <br><br>Til udregningerne af CO2 ækv. emissionerne inddrages data som brændstof (diesel) forbrug, jordtyper, landskabsmanagement, gødningsmanagement, foder, herunder import og salg, vandforbrug, elektricitet, og flere andre, hvor der løbende kommer nye målepunkter ind i udregningerne. Det gør at du får nemmere ved, at vise dine kunder et reelt billede af, hvad du gør for at reducere din klima- og miljøbelastning og samtidig får du os som fagfolk indenfor landbrugs- og miljøvidenskab, med til at vejlede dig i at reducere din klimabelastning og optimere på dit ressourceforbrug.
+                                    <br><br>For omregning til CO2 ækv. Har vi ved kulstoflagring eller erosion (tab) anvendt formlen 1 kg C multipliceret med 12/44 = 3,66 kg CO2 og ved opgørelse af emission af lattergas (N2O) og metan (CH4), henholdsvis brugt emissionfaktorerne 298 og 25, for at omregne dem til CO2 ækvivalenter (eq).
+                                    <br><br>Det skal også siges, at vi har valgt en konservativ tilgang til brugen af dataen bag udregningerne, så hvis man fx ser på udtagning af tørvejord/lavbundsjorde (organogene jorde), så er der et spænd i denne carbon sink på 24-35 tons CO2 der bindes/optages i systemet. På grund af de klimatiske forhold og fejlmargin der er i sådanne undersøgelser, har vi valgt at sætte værdien på 24 tons CO2 der bindes. Sådan har vi valgt at håndtere al anden data, sådan så vi kan forholde os til de klimatiske forhold, som vi har i Danmark og de fejlmarginer, som de videnskabelige undersøgelser måtte indeholde. På den måde undgår du, at deklarere noget om dine produkter, som ikke holder stik i virkeligheden.
+                                    Følgende kilder er indtil videre brugt til udregningerne i Your Footprint;
+                        </p>
+                
+                    </div>       
+            <div id="dyrFaq" class="questions hidden">
                 <h2 class="heading">Her kan du læse om hvordan din data er beregnet</h2>
-                <h2>Hvordan er din data på køer beregnet? <button class="button2" id="btn1" onclick="cowsFaq()">></button></h2>
+                <h2>Hvordan er din data på køer beregnet? <button class="button2" onclick="cowsFaq()">></button></h2>
                 <h2>Hvordan er din data på grise beregnet? <button class="button" onclick="pigsFaq()">></button></h2>
                 <h2>Hvordan er din data på høns beregnet? <button class="button" onclick="hensFaq()">></button></h2>
                 <h2>Hvordan er din data på ænder beregnet? <button class="button1" onclick="ducksFaq()">></button></h2>
             </div>
-                <div id="hens" class="content-faq">
+                <div id="hens" class="content-faq hidden">
                     <p>Det er ikke det mest præcise data, vi har været I stand til at få fat i, i denne tidlige version af beregneren.<br><br>
 
                     På nuværende tidspunkt er data vedrørende fjerkræ beregnet ud fra en livscyklusanalyse, hvor vi har alle data fra input på gården til dyret enten har lagt sit æg, eller skal slagtes. <br><br>
@@ -73,7 +109,7 @@ Dog efterhånden som vi får oplysninger omkring de svin, som forefindes på bed
                 <!--content data / dit maskineri-->
                 <div id="content-mask" class="questions hidden">
                     <h2 class="heading">Her kan du læse om hvordan din data er beregnet</h2>
-                    <h2>Hvordan er data på dine maskiner beregnet? <button class="button2" id="btn1" onclick="maskFaqC()">></button></h2>
+                    <h2>Hvordan er data på dine maskiner beregnet? <button class="button2" onclick="maskFaqC()">></button></h2>
                 </div>
                     <div id="maskineri" class="hidden">
                         <p>
@@ -81,6 +117,8 @@ Dog efterhånden som vi får oplysninger omkring de svin, som forefindes på bed
                         </p>
                 
                     </div>
+
+                    
             </div>
         </div>
     </body>
