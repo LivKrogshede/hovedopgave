@@ -1,0 +1,45 @@
+
+.quest {
+    display: flex;
+    float: right;
+}
+
+.q-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff90;
+    border-radius: 17px 0px 17px 17px;
+    bottom: 100px;
+    right: 10px;
+    padding-left: 2vw;
+    width: 30vw;
+    height: 60vh;
+    position: fixed;
+}
+
+.infoBtn {
+  background-color: #ffffff;
+  border: solid;
+  border-color:  #424141;
+  color:  #424141;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  float: right;
+  font-size: 10px;
+  border-radius: 50%;
+}
+
+.infoBtn1 {
+    margin-right: 200px;
+}
+
+.question {
+    padding: 10px;
+}
+
+.question h3 {
+    font-size: 15px;
+}
+

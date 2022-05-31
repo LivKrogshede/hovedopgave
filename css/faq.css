@@ -37,30 +37,7 @@
     color: white;
   }
 
-.nav2  {
-    float: right;
-  }
-  
-.cat-faq a {
-    display: block;
-    background-color: #ffffff72;
-    color: #424141;
-    border-radius: 17px 17px 0px 0px;
-    text-align: center;
-    padding: 20px 10px;
-    text-decoration: none;
-    margin: 1px;
-  }
 
-.nav2 a.active {
-    background-color: #ffffff90;
-    color: white;
-  }
-
-.nav2 a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
 
   /* faq questions and content */
 
@@ -131,11 +108,7 @@
   padding: 20px;
 }
 
-/*bruges i js*/ 
 
-.hidden {
-  display: none;
-}
 
 /* knap styling */
 
@@ -161,78 +134,3 @@ button {
 button:focus {
   outline: orange 5px auto;
 }
-
-/* centrer tekst */
-
-.center {
-  padding-top: 10px;
-  text-align: center;
-}
-
-
-/*horizontal top nav-bar */  
-@media screen and (min-height: 901px) { 
-  .cat-faq {
-      display: flex;
-      position: relative; 
-      top: 23vh;
-      right: 0.5vw;
-      color: #424141;
-      list-style-type: none;
-    }
-  
-  /*sizing and placement of icons*/ 
-  .icon {
-    width: 5vh;
-  }
-
-  .i-con {
-    position: fixed;
-    right:210px;
-    top: 33vh;
-  }
-
-  .questions h2 {
-    margin: 10px;
-  }
-
-  .heading {
-    font-size: 30px;
-  }
-  }
-
-/*horizontal top nav-bar */
-@media screen and (max-height: 900px) { 
-  .cat-faq {
-      display: flex;
-      position: relative; 
-      top: 18vh;
-      right: 0.6vw;
-      color: #424141;
-      list-style-type: none;
-    }
-  
-    
-  /*sizing and placement of icons*/ 
-  .icon {
-    width: 5vh;
-  }
-
-  .i-con {
-    position: fixed;
-    right:190px;
-    top: 33vh;
-  }
-
-  .questions h2 {
-    margin: 10px;
-  }
-
-  }
-
- 
-
-
-
-
-
