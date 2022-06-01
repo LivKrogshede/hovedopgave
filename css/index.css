@@ -1,4 +1,42 @@
 
+h1 {
+color: white;
+width: 450px;
+height: 50px;
+margin-left: auto;
+margin-right: auto;
+}
+
+p {
+
+color: white;
+margin-left: auto;
+margin-right: auto;
+width: 550px;
+height: 60px;
+}
+
+
+.cirkel {
+top: 1%;
+left: 1%;
+background-color: white;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+position: sticky;
+}
+
+.profile-box {
+  top: 1%;
+  left: 3%;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  position: sticky;
+  border-radius: 25%;
+}
+
 
 
 .logo-one img {
@@ -13,6 +51,7 @@ width: 50%;
 
 
 .vert-menu {
+top: 11%;
 margin: auto;
 width: 50%;
 padding: 10px;

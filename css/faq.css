@@ -11,9 +11,9 @@
 
 .faq-nav {
     list-style-type: none;
-    position: fixed; 
-    right: 62vw; 
-    top: 30vh; 
+    position: fixed;
+    right: 62vw;
+    top: 30vh;
   }
 
 .nav1 a {
@@ -22,9 +22,9 @@
     background-color: #ffffff72;
     text-decoration: none;
     border-radius: 13px 0px 0px 13px ;
-    padding: 20px; 
+    padding: 20px;
     width: 120px;
-    margin: 8px; 
+    margin: 8px;
   }
 
 .nav1 a.active {
@@ -52,16 +52,16 @@
       width: 60vw;
       height: 60vh;
       position: fixed;
-      
+
   }
 
   .questions {
-      display: flex;   
+      display: flex;
       flex-direction: column;
       padding-top: 10vh;
   }
 
-  
+
 
   .content-faq {
       display: flex;
@@ -81,7 +81,7 @@
     font-size: large;
   }
 
-  /* scrollbar */ 
+  /* scrollbar */
   /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -90,21 +90,21 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   margin: 20px;
   border-radius: 17px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #424141; 
+  background: #424141;
   border-radius: 17px;
   padding: 20px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #424141; 
+  background: #424141;
   padding: 20px;
 }
 
