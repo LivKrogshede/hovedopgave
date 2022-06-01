@@ -2,11 +2,28 @@
 
 
 .body {
-/*   background-image: url:image(); */
-   background-color: #cccccc;
+
 
 }
 
+
+.logo-one {
+position: fixed;
+margin: 0 auto;
+margin-top: 100px;
+margin-left: 47%;
+
+}
+
+
+
+.logo-one img {
+max-width: 200px;
+max-height: 200px;
+align-items: center;
+
+justify-content: center;
+}
 
 .vert-menu {
 width: 300px;
