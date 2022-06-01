@@ -7,6 +7,7 @@
     <title>Questionaire</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/quest.css">
+    <script src="js/questionaire.js"></script>
 </head>
 <body class="bg">
     <div class="quest">
@@ -30,7 +31,7 @@
             <button class="infoBtn infoBtn2">?</button>
             <h3>2 - Hvor mange hektar er dit landbrug på?</h3>
             <form>
-                <input type="number" value="submit">
+                <input id="totalH" onchange="checkHektarSize()" type="number">
             </form>
         </div>
         
@@ -38,7 +39,7 @@
             <button class="infoBtn infoBtn3">?</button>
             <h3>3 - Hvor mange hektar anvendes til høst?</h3>
             <form>
-                <input type="number" value="submit">
+                <input id="hoestH"  onchange="checkHektarSize()" type="number">
             </form>
         </div>
 
@@ -46,14 +47,14 @@
             <button class="infoBtn">?</button>
             <h3>4 - Hvor mange hektar anvendes på træer med frugt eller nødder?</h3>
             <form>
-                <input type="number" value="submit">
+                <input id="fruitH" onchange="checkHektarSize()" type="number">
             </form>
         </div>
         <div class="question">
             <button class="infoBtn infoBtn5">?</button>
             <h3>5 - Hvor mange hektar anvendes på skov?</h3>
             <form>
-                <input type="number" value="submit">
+                <input id="skovH" onchange="checkHektarSize()" type="number">
             </form>
             
         </div>
