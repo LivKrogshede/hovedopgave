@@ -1,0 +1,36 @@
+
+
+
+.body {
+/*   background-image: url:image(); */
+   background-color: #cccccc;
+
+}
+
+
+.vert-menu {
+width: 300px;
+position: relative;
+bottom: 50%;
+left: 50%;
+}
+
+
+
+
+.vert-menu a {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: : 50%;
+  background-color: #eee;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.vert-menu a:hover {
+  background-color: #ccc;
+}
