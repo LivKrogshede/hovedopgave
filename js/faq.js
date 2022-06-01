@@ -1,5 +1,10 @@
 //dette script er skrevet af Liv Krogshede
 
+window.onload = function()  {
+    console.log('loaded');
+    document.getElementById('trOmOs').addEventListener('click', toggleFaq('about'));
+};
+
 
 //får info om køer frem
 function cowsFaq() {
@@ -193,6 +198,18 @@ function dataFaq() {
 }
 
 //makes the about us content appear
+
+function toggleFaq(idTag) {
+    console.log('is clicked');
+    if (document.getElementById(idTag).classList.contains('hidden')) {
+        document.getElementById(idTag).classList.remove('hidden');
+    }
+    else {
+        document.getElementById(idTag).classList.add('hidden');
+    }
+
+}
+
 function aboutFaqC() {
     document.getElementById("about").classList.remove("hidden");
     document.getElementById("viden").classList.add("hidden");
