@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/quest.css">
     <script src="js/questionaire.js"></script>
 </head>
+<!--Lavet af Liv Krogshede-->
 <body class="bg">
     <div class="quest">
         <nav class="cat-faq">
@@ -20,7 +21,7 @@
         <div class="q-content">
             <h1 class="center">Dit landbrug</h1>
         <div class="question">
-            <button class="infoBtn infoBtn1">?</button>
+            <button onclick="infoMsg()" class="infoBtn infoBtn1">?</button>
             <h3>1 - Er dit landbrug økologisk?</h3>
             <div class="btnCon">
             <button class="btnCh">Ja</button>
@@ -56,10 +57,22 @@
             <form>
                 <input id="skovH" onchange="checkHektarSize()" type="number">
             </form>
-            
-        </div>
-
+        </div>      
         </div>
     </div>
+    <div id="msgBox" class="messageBox hidden">
+        <button onclick="closeDown()" class="infoBtn">X</button>
+        <h1 class="center">Ups der er noget galt her</h1>
+        <p class="center">Din indtastning må ikke være større end dit samlede landbrugsareal</p>
+    </div>
+
+    <div id="msgBoxEco" class="messageBox hidden">
+        <button class="infoBtn infoBtn1">?</button>
+        <button onclick="closeDown()" class="infoBtn">X</button>
+        <h1 class="center">Ups der er noget galt her</h1>
+        <p class="center">Din indtastning må ikke være større end dit samlede landbrugsareal</p>
+    </div>
+
+
 </body>
 </html>

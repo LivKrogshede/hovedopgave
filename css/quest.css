@@ -1,4 +1,4 @@
-
+/*lavet af Liv Kroghede*/
 .quest {
     display: flex;
     float: right;
@@ -68,3 +68,14 @@
     border-radius: 5px;
 }
 
+.messageBox {
+    margin: auto;
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 30%;
+    right: 50%;
+    background-color: #ffffff90;
+    border-radius: 17px;
+    padding: 10px;
+}

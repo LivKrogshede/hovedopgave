@@ -1,4 +1,6 @@
+//script skrevet af Liv Krogshede
 
+//checker at indtastning ikke er større end det samlede areal
 function checkHektarSize() {
     console.log('hello world');
 
@@ -15,9 +17,15 @@ function checkHektarSize() {
     console.log(hoestHek+fruitHek+skovHek);
 
     if (totalHek < (hoestHek+fruitHek+skovHek)){
-        console.log('display');
+        document.getElementById('msgBox').classList.remove('hidden');
     }
     else {
-        console.log("display none");
+        document.getElementById('msgBox').classList.add('hidden');
     }
 }
+
+//lukker messageboxe ned 
+function closeDown() {
+    document.getElementById('msgBox').classList.add('hidden');
+}
+
