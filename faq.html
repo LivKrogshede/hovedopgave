@@ -35,7 +35,7 @@
                     <img id="duckI" class="icon hidden" src="./assets/duck.png">
                     <img id="pigI" class="icon hidden" src="./assets/pig.png">
                     <img id="maskI" class="icon hidden" src="./assets/iconmask.png">
-                    <img id="logoI" class="icon" src="./assets/logo1.png">
+                    <img id="logoI" class="icon hidden" src="./assets/logo1.png">
                     </div>
                     <!--content data / om os-->
                 <div id="content-about" class="questions">
@@ -93,10 +93,45 @@
                     </div>
             <div id="dyrFaq" class="questions hidden">
                 <h2 class="heading">Her kan du læse om hvordan din data er beregnet</h2>
-                <h2>Hvordan er din data på køer beregnet? <button class="button2" onclick="cowsFaq()">></button></h2>
-                <h2>Hvordan er din data på grise beregnet? <button class="button" onclick="pigsFaq()">></button></h2>
-                <h2>Hvordan er din data på høns beregnet? <button class="button" onclick="hensFaq()">></button></h2>
-                <h2>Hvordan er din data på ænder beregnet? <button class="button1" onclick="ducksFaq()">></button></h2>
+
+
+                <table>
+                    <tr id="trCows">
+                        <td>
+                            <h2>Hvordan er din data på køer beregnet?</h2>
+                        </td>
+                        <td id="tdCows">
+                            <h2>+</h2>
+                        </td>
+                    </tr>
+                    
+                    <tr id="trPigs">
+                        <td>
+                            <h2>Hvordan er din data på grise beregnet?</h2>
+                        </td>
+                        <td id="tdPigs">
+                             <h2>+</h2>
+                        </td>
+                    </tr>
+                    
+                    <tr id="trHens">
+                        <td>
+                            <h2>Hvordan er din data på høns beregnet?</h2>
+                        </td>
+                        <td id="tdHens">
+                             <h2>+</h2>
+                        </td>
+                    </tr>
+                    
+                    <tr id="trDucks">
+                        <td>
+                            <h2>Hvordan er din data på ænder beregnet?</h2>
+                        </td>
+                        <td id="tdDucks">
+                             <h2>+</h2>
+                        </td>
+                    </tr>
+                </table>
             </div>
                 <div id="hens" class="content-faq hidden">
                     <p>Det er ikke det mest præcise data, vi har været I stand til at få fat i, i denne tidlige version af beregneren.<br><br>
@@ -106,7 +141,7 @@
                     Dette gør at det ikke er de mest præcise data ud fra din besægtning. Hvilket gør at vi ikke er i stand til at reducere klimabelastningen og optimere resssource forbruget.
                     </p>
                 </div>
-                <div id="cows" class="hidden">
+                <div id="cows" class="content-faq hidden">
                     <p>
                         Data på kvæg er beregnet ud fra gennemsnitlige værdier, ved henholdsvis mælkeproduktion og kødkvægsproduktion.<br><br> Her har vi taget data beregnet for CO2 eq emissioner for gyllehåndtering, stald og livsytringer, samt påvirkningen kvæget måtte have på landskabsforvaltningen.<br> <br> Hertil spørger vi ind til fodersammensætningen, således at vi kan få et billede af dine dyrs faktiske CO2 eq emission.
 
@@ -114,7 +149,7 @@
 
                     </p>
                 </div>
-                <div id="pigs" class="hidden">
+                <div id="pigs" class="content-faq hidden">
                     <p>
                         På nuværende tidspunkt er data beregnet ud fra en videnskabelig undersøgelse, hvor man har set på svin i en livscyklus analyse, hvor alt er inkluderet og bestemt ud fra per 1 kg levende vægt. Derfor er det, at du som bruger oplyser vægten på dine svin så retvisende som muligt, af stor vigtighed.<br><br> Da data for nuværende er udregnet på baggrund af en livscyklus analyse, kan vi ikke optimere på din bedrift.
 
@@ -122,15 +157,25 @@ Dog efterhånden som vi får oplysninger omkring de svin, som forefindes på bed
 
                     </p>
                 </div>
-                <div id="ducks" class="hidden">
+                <div id="ducks" class="content-faq hidden">
                   <p>  Da ænders fysiologi og anatomi minder om høns, og da foderkonventeringsraten er sammenlignelig, anvender vi data for høns, som egentlig er dækkende for fjerkræ helt generelt. Derfor er udsagnet under høns også dækkende for ænder.</p>
                 </div>
                 <!--content data / dit maskineri-->
                 <div id="content-mask" class="questions hidden">
-                    <h2 class="heading">Her kan du læse om hvordan din data er beregnet</h2>
-                    <h2>Hvordan er data på dine maskiner beregnet? <button class="button2" onclick="maskFaqC()">></button></h2>
+                    <table>
+                        <tr id="trMask">
+                            <h2 class="heading">Her kan du læse om hvordan din data er beregnet</h2>
+                            <td>
+                                <h2>Hvordan er data på maskiner beregnet?</h2>
+                            </td>
+                            <td id="tdMask">
+                                <h2>+</h2>
+                            </td>
+                        </tr>
+                    </table>
+                   
                 </div>
-                    <div id="maskineri" class="hidden">
+                    <div id="maskineri" class="content-faq hidden">
                         <p>
                             For nuværende har vi ikke inkluderet CO2 eq emissions omkostningerne ved produktionen af maskinerne, men gør kun brug af henholdsvis diesel og KWH ved brug, i forhold til, hvad emissionen er for disse. I følge danske videnskabelige undersøgelser, samt et eventuelt forbrug af vand, som opgøres seperat.
                         </p>
