@@ -202,19 +202,33 @@ margin: auto;
 display: flex;
 flex:5%;
 
+}
+
+.some-buttons svg {
+color: white;
+background-color: white;
 
 }
+
+
+
+
+
 
 .fb {
-background-color: white;
-color: white;
+
 flex: 5%;
+
 }
+
+
+
+
+
 
 
 .instagram {
-  background-color: white;
-  color: white;
+
   flex: 5%;
 
 }
@@ -224,6 +238,7 @@ flex: 5%;
   background-color: white;
   color: white;
   flex: 5%;
+
 
 }
 
