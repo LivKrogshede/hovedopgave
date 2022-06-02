@@ -80,7 +80,6 @@ function maskFaq() {
 
 }
 
-
 function dyrFaq() {
     //get the content of data/dit dyrehold/about to be hidden 
     document.getElementById("content-mask").classList.add("hidden");
