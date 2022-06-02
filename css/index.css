@@ -192,8 +192,6 @@ max-width: 250px;
 .some-buttons {
 width: 500px;
 height: 50px;
-background-color: white;
-opacity:80%;
 margin: auto;
 display: flex;
 padding: 12px;
@@ -204,19 +202,21 @@ flex:5%;
 
 }
 
+
+
+/*
 .some-buttons svg {
 color: white;
 background-color: white;
 
 }
 
-
+*/
 
 
 
 
 .fb {
-
 flex: 5%;
 
 }
@@ -228,15 +228,14 @@ flex: 5%;
 
 
 .instagram {
-
+  margin-top: 5px;
   flex: 5%;
+
 
 }
 
 
 .linkedin {
-  background-color: white;
-  color: white;
   flex: 5%;
 
 
@@ -244,14 +243,12 @@ flex: 5%;
 
 
 .youtube {
-  background-color: white;
-  color: white;
+    margin-top: 9px;
   flex: 5%;
 
 }
 
 .share {
-  background-color: white;
-  color: white;
+  margin-top: 12px;
   flex: 5%;
 }
