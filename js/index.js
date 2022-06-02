@@ -3,8 +3,15 @@
 
 
 
-var profileboxes = document.getElementbyID("");
+let counts=setInterval(updated)
 
-var profile-boxbtn = document.getElementbyID("");
+        let fra=0;
+        function updated(){
+            var count= document.getElementById("taeller");
+            count.innerHTML=++fra;
 
-var span = document.getElementbyID("Luk");
+            if(fra===100000000000)
+            {
+                clearInterval(counts);
+            }
+        }
