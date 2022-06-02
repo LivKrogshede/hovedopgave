@@ -7,6 +7,19 @@ margin-left: auto;
 margin-right: auto;
 }
 
+h2 {
+color: white;
+width: 300px;
+height: 35px;;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+margin-top: 5%;
+display: block;
+}
+
+
+
 p {
 
 color: white;
@@ -47,7 +60,7 @@ margin-left: 10px;
 .generel-vert {
 
 width: 200px;
-height: 200px;
+height: 185px;
 background-color: white;
 opacity: 50%;
 justify-content: center;
@@ -57,18 +70,18 @@ margin-top: 50px;
 }
 
 .generel-vert a {
-margin-top: 5px;
+  margin-top: 5px;
   display: block;
   color: black;
   padding: 12px;
   text-decoration: underline;
-text-align: center;
+  text-align: center;
 }
 
 
 .generel-vert a:hover {
   background-color: #ccc;
-  border-radius: 25px;
+  border-radius: 30px;
 }
 
 
@@ -160,4 +173,31 @@ max-width: 250px;
 
 .vert-menu a:hover {
   background-color: #ccc;
+}
+
+
+
+.some-buttons {
+width: 500px;
+height: 50px;
+background-color: white;
+opacity: 50%;
+margin: auto;
+}
+
+.fb {
+
+
+}
+
+
+.instagram {
+
+
+}
+
+
+.mail {
+
+
 }
