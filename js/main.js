@@ -8,10 +8,7 @@ main.loadpage = function(page) {
     $("#content").load(page);
 };
 
-main.init = function() {
-    window.main.loadpage("faq.html");
 
-};
 
 
 

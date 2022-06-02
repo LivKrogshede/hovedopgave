@@ -102,7 +102,7 @@ faq.dyrFaq = function() {
 }; 
 
 //vertical menu functions 
-faq.dataFaq = function() {
+faq.aboutFaq = function() {
     //get the content of the about page visible, and hides data content
     document.getElementById("content-about").classList.remove("hidden");
     document.getElementById("content-mask").classList.add("hidden");

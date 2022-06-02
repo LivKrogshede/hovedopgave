@@ -4,8 +4,13 @@
 .faq {
     display: flex;
     float: right;
+
 }
 
+/*
+*, *::before, *::after {
+  box-sizing: inherit !important;
+}*/
 
 /*vertical side nav-bar */
 
