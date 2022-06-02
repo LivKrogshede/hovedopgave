@@ -1,84 +1,66 @@
 //dette script er skrevet af Liv Krogshede
 
+window.onload = function()  {
+    console.log('loaded');
+    //om os side
+    document.getElementById('trOmOs').addEventListener('click', function() {toggleFaq('about', 'tdOmOs', 'logoI')});
+    document.getElementById('trViden').addEventListener('click', function() {toggleFaq('viden', 'tdViden','logoI')});
+    
+    //data om dyr
+    document.getElementById('trCows').addEventListener('click', function() {toggleFaq('cows', 'tdCows', 'cowI')});
+    document.getElementById('trPigs').addEventListener('click', function() {toggleFaq('pigs', 'tdPigs', 'pigI')});
+    document.getElementById('trHens').addEventListener('click', function() {toggleFaq('hens', 'tdHens', 'henI')});
+    document.getElementById('trDucks').addEventListener('click', function() {toggleFaq('ducks', 'tdDucks', 'duckI')});
 
-//får info om køer frem
-function cowsFaq() {
-    var hens = document.getElementById("hens");
-    var cows = document.getElementById("cows");
-    var ducks = document.getElementById("ducks");
-    var pigs = document.getElementById("pigs");
-    pigs.classList.add("hidden");
-    hens.classList.add("hidden");
-    ducks.classList.add("hidden");
-    cows.classList.remove("hidden");
-    cows.classList.add("content-faq");
+    //data om maskineri
+    document.getElementById('trMask').addEventListener('click', function(){toggleFaq('maskineri', 'tdMask', 'maskI')});
+};
 
-    //icons
-    document.getElementById("cowI").classList.remove("hidden");
-    document.getElementById("henI").classList.add("hidden");
-    document.getElementById("pigI").classList.add("hidden");
-    document.getElementById("duckI").classList.add("hidden");
-    document.getElementById("maskI").classList.add("hidden");
+//makes the about us content appear
+function toggleFaq(idTag, tagTd, tagIcon) {
+    if (document.getElementById(idTag).classList.contains('hidden')) {
+        //hides all faq content 
+        hidefaqs();
+
+        //show relevant faq content and set to - 
+        document.getElementById(tagTd).innerHTML = '-';
+        document.getElementById(idTag).classList.remove('hidden');
+        document.getElementById(tagIcon).classList.remove('hidden');
+    }
+    else {
+        //remove visible faq content and set to +
+        document.getElementById(idTag).classList.add('hidden');
+        document.getElementById(tagIcon).classList.add('hidden');
+        document.getElementById(tagTd).innerHTML = '+';
+    }
 }
 
-//får info om høns frem
-function hensFaq() {
-    var hens = document.getElementById("hens");
-    var cows = document.getElementById("cows");
-    var ducks = document.getElementById("ducks");
-    hens.classList.remove("hidden");
-    hens.classList.add("content-faq");
-    ducks.classList.add("hidden");
-    cows.classList.add("hidden");
-    pigs.classList.add("hidden");
+function hidefaqs() {
+    //hides all faq content
+    document.getElementById("viden").classList.add("hidden");
+    document.getElementById("about").classList.add("hidden");
+    document.getElementById("cows").classList.add("hidden");
+    document.getElementById("hens").classList.add("hidden");
+    document.getElementById("pigs").classList.add("hidden");
+    document.getElementById("ducks").classList.add("hidden");
+    document.getElementById('maskineri').classList.add('hidden');
 
-    //icons
-    document.getElementById("henI").classList.remove("hidden");
+    //set all to + 
+    document.getElementById("tdOmOs").innerHTML = '+';
+    document.getElementById("tdViden").innerHTML = '+';
+    document.getElementById("tdCows").innerHTML = '+';
+    document.getElementById("tdPigs").innerHTML = '+';
+    document.getElementById("tdHens").innerHTML = '+';
+    document.getElementById("tdDucks").innerHTML = '+';
+    document.getElementById("tdMask").innerHTML = '+';
+
+    //hides all faq icons
     document.getElementById("cowI").classList.add("hidden");
+    document.getElementById("henI").classList.add("hidden");
     document.getElementById("pigI").classList.add("hidden");
     document.getElementById("duckI").classList.add("hidden");
     document.getElementById("maskI").classList.add("hidden");
-}
-
-//får info om grise frem
-function pigsFaq() {
-    var hens = document.getElementById("hens");
-    var cows = document.getElementById("cows");
-    var pigs = document.getElementById("pigs");
-    var ducks = document.getElementById("ducks");
-    hens.classList.add("hidden");
-    cows.classList.add("hidden");
-    ducks.classList.add("hidden");
-    pigs.classList.add("content-faq");
-    pigs.classList.remove("hidden"); 
-
-    //icons
-    document.getElementById("pigI").classList.remove("hidden");
-    document.getElementById("cowI").classList.add("hidden"); 
-    document.getElementById("henI").classList.add("hidden"); 
-    document.getElementById("duckI").classList.add("hidden");  
-    document.getElementById("maskI").classList.add("hidden");
-}
-
-
-//får info om ænder frem 
-function ducksFaq() {
-    var hens = document.getElementById("hens");
-    var cows = document.getElementById("cows");
-    var pigs = document.getElementById("pigs");
-    var ducks = document.getElementById("ducks");
-    hens.classList.add("hidden");
-    cows.classList.add("hidden");
-    pigs.classList.add("hidden");
-    ducks.classList.remove("hidden");
-    ducks.classList.add("content-faq");
-
-    //icons
-    document.getElementById("duckI").classList.remove("hidden");
-    document.getElementById("cowI").classList.add("hidden"); 
-    document.getElementById("henI").classList.add("hidden");
-    document.getElementById("pigI").classList.add("hidden"); 
-    document.getElementById("maskI").classList.add("hidden");    
+    document.getElementById("logoI").classList.add("hidden");
 }
 
 //horizontal menu functions 
@@ -96,34 +78,8 @@ function maskFaq() {
     //unhides the section of maskineri spørgsmål 
     document.getElementById("content-mask").classList.remove('hidden');
 
-    //makes sure that the answers for data/dyrehold becomes hidden
-    var hens = document.getElementById("hens");
-    var cows = document.getElementById("cows");
-    var pigs = document.getElementById("pigs");
-    var ducks = document.getElementById("ducks");
-    hens.classList.add("hidden");
-    cows.classList.add("hidden");
-    pigs.classList.add("hidden");
-    ducks.classList.add("hidden");
-    ducks.classList.add("hidden");
-
-    //icons
-    document.getElementById("duckI").classList.add("hidden");
-    document.getElementById("cowI").classList.add("hidden"); 
-    document.getElementById("henI").classList.add("hidden");
-    document.getElementById("pigI").classList.add("hidden");
-    document.getElementById("maskI").classList.add("hidden");
-
 }
 
-//makes the question about maskineri visible
-function maskFaqC() {
-    document.getElementById("maskineri").classList.remove("hidden");
-    document.getElementById("maskineri").classList.add("content-faq");
-
-    //icon 
-    document.getElementById("maskI").classList.remove("hidden");
-}
 
 function dyrFaq() {
     //get the content of data/dit dyrehold/about to be hidden 
@@ -135,7 +91,7 @@ function dyrFaq() {
     document.getElementById("maskMenu").classList.remove("active");
     document.getElementById("dyrMenu").classList.add("active");
 
-    //unhides the section of maskineri spørgsmål 
+    //unhides the section of dyr spørgsmål 
     document.getElementById("dyrFaq").classList.remove('hidden');
 
     //makes sure that the answers for data/maskineri becomes hidden
@@ -143,7 +99,7 @@ function dyrFaq() {
 
     //icons 
     document.getElementById("maskI").classList.add("hidden");
-}
+} 
 
 //vertical menu functions 
 function aboutFaq() {
@@ -151,25 +107,14 @@ function aboutFaq() {
     document.getElementById("content-about").classList.remove("hidden");
     document.getElementById("content-mask").classList.add("hidden");
     document.getElementById("dyrFaq").classList.add("hidden");
-    document.getElementById("maskineri").classList.add("hidden");
-    document.getElementById("cows").classList.add("hidden");
-    document.getElementById("hens").classList.add("hidden");
-    document.getElementById("pigs").classList.add("hidden");
-    document.getElementById("ducks").classList.add("hidden");
     //makes the right menu icon active 
     document.getElementById("datMen").classList.remove("active");
     document.getElementById("aboMen").classList.add("active");
     //hides the horizontal menu 
     document.getElementById("horMen").classList.add("hidden");
     document.getElementById("horMen").classList.remove("cat-faq");
-
-    //handles icon 
-    document.getElementById("logoI").classList.remove("hidden");
-    document.getElementById("duckI").classList.add("hidden");
-    document.getElementById("cowI").classList.add("hidden"); 
-    document.getElementById("henI").classList.add("hidden");
-    document.getElementById("pigI").classList.add("hidden");
-    document.getElementById("maskI").classList.add("hidden");
+    //hides everything that is not relevant
+    hidefaqs();
 }
 
 function dataFaq() {
@@ -180,26 +125,12 @@ function dataFaq() {
     document.getElementById("horMen").classList.add("cat-faq");
     //hides the about content
     document.getElementById("content-about").classList.add("hidden");
-    document.getElementById("about").classList.add("hidden");
-    document.getElementById("viden").classList.add("hidden");
-    document.getElementById("about").classList.add("hidden");
     //makes the right menu icon active 
     document.getElementById("datMen").classList.add("active");
     document.getElementById("aboMen").classList.remove("active");
     document.getElementById("dyrMenu").classList.add("active");
     document.getElementById("maskMenu").classList.remove("active");
-    //handles icon 
-    document.getElementById("logoI").classList.add("hidden");
+    //hides everything that is not relevant
+    hidefaqs();
 }
 
-//makes the about us content appear
-function aboutFaqC() {
-    document.getElementById("about").classList.remove("hidden");
-    document.getElementById("viden").classList.add("hidden");
-}
-
-//makes the viden content appear
-function videnFaq() {
-    document.getElementById("viden").classList.remove("hidden");
-    document.getElementById("about").classList.add("hidden");
-}
