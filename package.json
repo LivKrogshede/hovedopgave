@@ -1,0 +1,23 @@
+{
+  "name": "hovedopgave",
+  "version": "1.0.0",
+  "description": "hovedopgave",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LivKrogshede/hovedopgave.git"
+  },
+  "author": "Liv Krogshede",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/LivKrogshede/hovedopgave/issues"
+  },
+  "homepage": "https://github.com/LivKrogshede/hovedopgave#readme",
+  "private": true,
+  "devDependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
