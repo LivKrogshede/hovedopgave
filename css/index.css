@@ -193,23 +193,65 @@ max-width: 250px;
 width: 500px;
 height: 50px;
 background-color: white;
-opacity: 50%;
+opacity:80%;
 margin: auto;
+display: flex;
+padding: 12px;
+justify-content: center;
+margin: auto;
+display: flex;
+flex:5%;
+
 }
+
+.some-buttons svg {
+color: white;
+background-color: white;
+
+}
+
+
+
+
+
 
 .fb {
 
+flex: 5%;
 
 }
+
+
+
+
+
 
 
 .instagram {
 
+  flex: 5%;
 
 }
 
 
-.mail {
+.linkedin {
+  background-color: white;
+  color: white;
+  flex: 5%;
 
 
+}
+
+
+.youtube {
+  background-color: white;
+  color: white;
+  flex: 5%;
+
+}
+
+.share {
+  background-color: white;
+  color: white;
+  flex: 5%;
 }
