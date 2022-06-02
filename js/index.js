@@ -1,10 +1,19 @@
 
 
+/* lavet af Christian */
 
-function close() {
-    document.getElementById('menu').classList.add('hidden');
+
+/* toggler menu i øverste venstre hjørne */
+function luk(){
+    document.getElementById('menu').classList.toggle("hidden")
 }
 
+
+
+
+
+
+/* counter til Co2-udledning */
 
 
 let counts=setInterval(updated)
