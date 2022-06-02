@@ -29,6 +29,21 @@ position: sticky;
 */
 
 
+
+.dots {
+position: relative;
+height: 10px;
+width: 10px;
+background: white;
+border-radius: 50px;
+display: block;
+padding: 1px;
+margin-top: 5px;
+margin: 10px;
+margin-left: 10px;
+
+}
+
 .generel-vert {
 
 width: 200px;
