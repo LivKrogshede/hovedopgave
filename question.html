@@ -21,7 +21,7 @@
         <div class="q-content">
             <h1 class="center">Dit landbrug</h1>
         <div class="question">
-            <button onclick="infoMsg('msgBoxInfo')" class="infoBtn infoBtn1">?</button>
+            <button onclick="window.question.infoMsg('msgBoxInfo')" class="infoBtn infoBtn1">?</button>
             <h3>1 - Er dit landbrug økologisk?</h3>
             <div class="btnCon">
             <button class="btnCh">Ja</button>
@@ -29,45 +29,45 @@
             </div>
         </div>
         <div class="question">
-            <button onclick="infoMsg('msgBoxInfo2')" class="infoBtn infoBtn2">?</button>
+            <button onclick="window.question.infoMsg('msgBoxInfo2')" class="infoBtn infoBtn2">?</button>
             <h3>2 - Hvor mange hektar er dit landbrug på?</h3>
             <form onkeydown="return event.key != 'Enter';">
-                <input id="totalH" onchange="checkHektarSize()" type="number" value="0.0">
+                <input id="totalH" onchange="window.question.checkHektarSize()" type="number" value="0.0">
             </form>
         </div>
         
         <div class="question">
-            <button onclick="infoMsg('msgBoxInfo3')" class="infoBtn infoBtn3">?</button>
+            <button onclick="window.question.infoMsg('msgBoxInfo3')" class="infoBtn infoBtn3">?</button>
             <h3>3 - Hvor mange hektar anvendes til høst?</h3>
             <form onkeydown="return event.key != 'Enter';">
-                <input id="hoestH"  onchange="checkHektarSize()" type="number" value="0.0">
+                <input id="hoestH"  onchange="window.question.checkHektarSize()" type="number" value="0.0">
             </form>
         </div>
 
         <div class="question">
-            <button onclick="infoMsg('msgBoxInfo4')" class="infoBtn">?</button>
+            <button onclick="window.question.infoMsg('msgBoxInfo4')" class="infoBtn">?</button>
             <h3>4 - Hvor mange hektar anvendes på træer med frugt eller nødder?</h3>
             <form onkeydown="return event.key != 'Enter';">
-                <input id="fruitH" onchange="checkHektarSize()" type="number" value="0.0">
+                <input id="fruitH" onchange="window.question.checkHektarSize()" type="number" value="0.0">
             </form>
         </div>
         <div class="question">
-            <button onclick="infoMsg('msgBoxInfo5')" class="infoBtn infoBtn5">?</button>
+            <button onclick="window.question.infoMsg('msgBoxInfo5')" class="infoBtn infoBtn5">?</button>
             <h3>5 - Hvor mange hektar anvendes på skov?</h3>
             <form onkeydown="return event.key != 'Enter';">
-                <input id="skovH" onchange="checkHektarSize()" type="number" value="0.0">
+                <input id="skovH" onchange="window.question.checkHektarSize()" type="number" value="0.0">
             </form>
         </div>      
         </div>
     </div>
     <div id="msgBoxError" class="messageBox hidden">
-        <button onclick="closeDown('msgBoxError')" class="infoBtn">X</button>
+        <button onclick="window.question.closeDown('msgBoxError')" class="infoBtn">X</button>
         <h1 class="center">Ups der er noget galt her</h1>
         <p class="center">Det samlede areal for høst, træer og skov må ikke overstige dit samlede landbrugsareal</p>
     </div>
 
     <div id="msgBoxInfo" class="messageBox hidden">
-        <button onclick="closeDown('msgBoxInfo')" class="infoBtn">X</button>
+        <button onclick="window.question.closeDown('msgBoxInfo')" class="infoBtn">X</button>
         <h3>1 - Er dit landbrug økologisk?</h3>
         <p>Her har vi brug for at vide om dit landbrug er certificeret økologisk. Besvar ved at trykke
              <button class="btnCh">Ja</button> 
@@ -75,7 +75,7 @@
         <strong><p>Eksempel:</p></strong><p>Bennys landbrug er økologisk så han trykker <button class="btnCh">Ja</button></p>
     </div>
     <div id="msgBoxInfo2" class="messageBox hidden">
-        <button onclick="closeDown('msgBoxInfo2')" class="infoBtn">X</button>
+        <button onclick="window.question.closeDown('msgBoxInfo2')" class="infoBtn">X</button>
         <h3>2 - Hvor mange hektar er dit landbrug på?</h3>
         <p>Her har vi brug for at vide dit samlede areal i hektar på HELE dit landbrug.<br>
             Du skal svare med at skrive et tal, og kun tal i input feltet. 
@@ -84,7 +84,7 @@
         <strong><p>Eksempel:</p></strong><p>Bennys landbrug er 2 hektarer så han skriver 2 i feltet <input type="number" value="2"></p>
     </div>
     <div id="msgBoxInfo3" class="messageBox hidden">
-        <button onclick="closeDown('msgBoxInfo3')" class="infoBtn">X</button>
+        <button onclick="window.question.closeDown('msgBoxInfo3')" class="infoBtn">X</button>
         <h3>3 - Hvor mange hektar anvendes til høst?</h3>
         <p>Her har vi brug for at vide dit samlede areal i hektar som anvendes til høst.<br>
             Du skal svare med at skrive et tal, og kun tal i input feltet. 
@@ -93,7 +93,7 @@
         <strong><p>Eksempel:</p></strong><p>I Bennys landbrug anvendes 0,5 hektarer til høst <input type="number" value="0.5"></p>
     </div>
     <div id="msgBoxInfo4" class="messageBox hidden">
-        <button onclick="closeDown('msgBoxInfo4')" class="infoBtn">X</button>
+        <button onclick="window.question.closeDown('msgBoxInfo4')" class="infoBtn">X</button>
         <h3>4 - Hvor mange hektar anvendes på træer med frugt eller nødder?</h3>
         <p>Her har vi brug for at vide hvor mange hektarer du bruger på frugt eller nødder<br>
             Du skal svare med at skrive et tal, og kun tal i input feltet. 
@@ -102,7 +102,7 @@
         <strong><p>Eksempel:</p></strong><p>Benny har ikke frugt eller nødder, så han skriver 0 i feltet <input type="number" value="0"></p>
     </div>
     <div id="msgBoxInfo5" class="messageBox hidden">
-        <button onclick="closeDown('msgBoxInfo5')" class="infoBtn">X</button>
+        <button onclick="window.question.closeDown('msgBoxInfo5')" class="infoBtn">X</button>
         <h3>5 - Hvor mange hektar anvendes på skov?</h3>
         <p>Her har vi brug for at vide hvor mange hektarer du bruger på skov træer (frugt og nøddetræer IKKE inkluderet)<br>
             Du skal svare med at skrive et tal, og kun tal i input feltet. 

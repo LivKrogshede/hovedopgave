@@ -1,26 +1,27 @@
 //dette script er skrevet af Liv Krogshede
+var faq = window.faq || {};
 
-window.onload = function()  {
+faq.load = function()  {
     console.log('loaded');
     //om os side
-    document.getElementById('trOmOs').addEventListener('click', function() {toggleFaq('about', 'tdOmOs', 'logoI')});
-    document.getElementById('trViden').addEventListener('click', function() {toggleFaq('viden', 'tdViden','logoI')});
+    document.getElementById('trOmOs').addEventListener('click', function() {window.faq.toggleFaq('about', 'tdOmOs', 'logoI')});
+    document.getElementById('trViden').addEventListener('click', function() {window.faq.toggleFaq('viden', 'tdViden','logoI')});
     
     //data om dyr
-    document.getElementById('trCows').addEventListener('click', function() {toggleFaq('cows', 'tdCows', 'cowI')});
-    document.getElementById('trPigs').addEventListener('click', function() {toggleFaq('pigs', 'tdPigs', 'pigI')});
-    document.getElementById('trHens').addEventListener('click', function() {toggleFaq('hens', 'tdHens', 'henI')});
-    document.getElementById('trDucks').addEventListener('click', function() {toggleFaq('ducks', 'tdDucks', 'duckI')});
+    document.getElementById('trCows').addEventListener('click', function() {window.faq.toggleFaq('cows', 'tdCows', 'cowI')});
+    document.getElementById('trPigs').addEventListener('click', function() {window.faq.toggleFaq('pigs', 'tdPigs', 'pigI')});
+    document.getElementById('trHens').addEventListener('click', function() {window.faq.toggleFaq('hens', 'tdHens', 'henI')});
+    document.getElementById('trDucks').addEventListener('click', function() {window.faq.toggleFaq('ducks', 'tdDucks', 'duckI')});
 
     //data om maskineri
-    document.getElementById('trMask').addEventListener('click', function(){toggleFaq('maskineri', 'tdMask', 'maskI')});
+    document.getElementById('trMask').addEventListener('click', function(){window.faq.toggleFaq('maskineri', 'tdMask', 'maskI')});
 };
 
 //makes the about us content appear
-function toggleFaq(idTag, tagTd, tagIcon) {
+faq.toggleFaq = function(idTag, tagTd, tagIcon) {
     if (document.getElementById(idTag).classList.contains('hidden')) {
         //hides all faq content 
-        hidefaqs();
+        window.faq.hidefaqs();
 
         //show relevant faq content and set to - 
         document.getElementById(tagTd).innerHTML = '-';
@@ -33,9 +34,9 @@ function toggleFaq(idTag, tagTd, tagIcon) {
         document.getElementById(tagIcon).classList.add('hidden');
         document.getElementById(tagTd).innerHTML = '+';
     }
-}
+};
 
-function hidefaqs() {
+faq.hidefaqs = function() {
     //hides all faq content
     document.getElementById("viden").classList.add("hidden");
     document.getElementById("about").classList.add("hidden");
@@ -61,12 +62,12 @@ function hidefaqs() {
     document.getElementById("duckI").classList.add("hidden");
     document.getElementById("maskI").classList.add("hidden");
     document.getElementById("logoI").classList.add("hidden");
-}
+};
 
 //horizontal menu functions 
 
 //får faq om maskineri frem 
-function maskFaq() {
+faq.maskFaq = function() {
     //get the content of data/dit dyrehold to be hidden 
     document.getElementById("dyrFaq").classList.add("hidden");
     document.getElementById("content-about").classList.add("hidden");
@@ -78,9 +79,9 @@ function maskFaq() {
     //unhides the section of maskineri spørgsmål 
     document.getElementById("content-mask").classList.remove('hidden');
 
-}
+};
 
-function dyrFaq() {
+faq.dyrFaq = function() {
     //get the content of data/dit dyrehold/about to be hidden 
     document.getElementById("content-mask").classList.add("hidden");
     document.getElementById("content-about").classList.add("hidden");
@@ -98,10 +99,10 @@ function dyrFaq() {
 
     //icons 
     document.getElementById("maskI").classList.add("hidden");
-} 
+}; 
 
 //vertical menu functions 
-function aboutFaq() {
+faq.dataFaq = function() {
     //get the content of the about page visible, and hides data content
     document.getElementById("content-about").classList.remove("hidden");
     document.getElementById("content-mask").classList.add("hidden");
@@ -113,10 +114,10 @@ function aboutFaq() {
     document.getElementById("horMen").classList.add("hidden");
     document.getElementById("horMen").classList.remove("cat-faq");
     //hides everything that is not relevant
-    hidefaqs();
-}
+    window.faq.hidefaqs();
+};
 
-function dataFaq() {
+faq.dataFaq = function() {
     //get the data content to appear
     document.getElementById("dyrFaq").classList.remove("hidden");
     //get the top menu to appear
@@ -130,6 +131,9 @@ function dataFaq() {
     document.getElementById("dyrMenu").classList.add("active");
     document.getElementById("maskMenu").classList.remove("active");
     //hides everything that is not relevant
-    hidefaqs();
-}
+    window.faq.hidefaqs();
+};
 
+window.faq = faq;
+
+window.faq.load();
