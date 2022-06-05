@@ -8,8 +8,4 @@ main.loadpage = function(page) {
     $("#content").load(page);
 };
 
-
-
-
-
 window.main = main;

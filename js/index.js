@@ -26,7 +26,7 @@ index.updated = function() {
 index.counts = index.counts || setInterval(index.updated)
 index.fra = index.fra || 0;
 
-window.index = index;
+
 
 
 
@@ -35,7 +35,7 @@ window.index = index;
 
   var number = 0;
 
-  function move() {
+  index.move = function() {
     var elem = document.getElementById("myBar");
     number++;
 
@@ -91,4 +91,6 @@ window.index = index;
     }
   }
 
+
+  window.index = index;
 /* med inspiration fra https://stackoverflow.com/questions/51691703/onclick-progression-bar */
