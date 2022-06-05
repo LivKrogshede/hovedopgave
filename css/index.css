@@ -182,9 +182,6 @@ transition-duration: 2s;
 }
 
 
-
-
-
 .linkedin {
   flex: 5%;
 }
@@ -216,4 +213,41 @@ transition-duration: 2s;
 transform: scale(2);
 transition-duration: 2s;
 
+}
+
+#myProgress {
+  width: 25%;
+  background-color: #ddd;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  border-radius: 25px;
+}
+
+#barbutton {
+
+height: 50px;
+width: 100px;
+border-radius: 25px;
+  background-color: white;
+  font-style: normal;
+  font-weight: 100px;
+  margin-left: 48%;
+  margin-right: 45%;
+}
+
+
+
+.hidden {
+  display: none;
 }
