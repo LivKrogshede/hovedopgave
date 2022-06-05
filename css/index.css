@@ -109,8 +109,6 @@ position: sticky;
 }
 
 
-
-
 #taeller {
   height: 40px;
   width: 40px;
@@ -152,14 +150,10 @@ flex:5%;
 
 
 
-/*
-.some-buttons svg {
-color: white;
-background-color: white;
 
-}
 
-*/
+
+
 
 
 
@@ -169,34 +163,57 @@ flex: 5%;
 
 }
 
+.fb img:hover {
+transform: scale(2);
+transition-duration: 2s;
 
-
-
-
+}
 
 
 .instagram {
   margin-top: 5px;
   flex: 5%;
+}
 
+.instagram img:hover {
+transform: scale(2);
+transition-duration: 2s;
 
 }
 
 
+
+
+
 .linkedin {
   flex: 5%;
+}
 
+.linkedin img:hover {
+transform: scale(2);
+transition-duration: 2s;
 
 }
 
 
 .youtube {
     margin-top: 9px;
-  flex: 5%;
+    flex: 5%;
+}
+
+.youtube img:hover {
+transform: scale(2);
+transition-duration: 2s;
 
 }
 
 .share {
   margin-top: 12px;
   flex: 5%;
+}
+
+.share img:hover {
+transform: scale(2);
+transition-duration: 2s;
+
 }
