@@ -1,0 +1,99 @@
+
+/*
+.dots {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    background: white;
+    border-radius: 50px;
+    display: block;
+    padding: 1px;
+    margin-top: 5px;
+    margin: 10px;
+    margin-left: 10px;
+
+}  */
+
+
+#profilewrapper {
+  border: 5px solid yellow;
+  height: 750px;
+
+}
+
+
+#profilepic {
+background-color: white;
+border-radius: 50%;
+width: 150px;
+height: 150px;
+margin-left: 50px;
+margin-top: 25px;
+text-align: center;
+justify-content: center;
+
+
+}
+
+h3 {
+  color: white;
+  font-style: italic;
+  margin-top: 10px;
+ text-align: center;
+
+
+}
+
+
+#stickynavbar {
+
+     display: inline-block;
+     width: 250px;
+     height: 750px;
+     border: 1px solid white;
+    background-color: #5C6C38;
+    align-content: center;
+    text-align: center;
+   }
+
+.stickynavbarpoints {
+height: 100px;
+width: 200px;
+margin-top: 100px;
+margin-left: 75px;
+}
+
+
+#stickynavbar a {
+  border-radius: 25px;
+  display: block;
+  background-color: #eee;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  margin: 12px;
+
+}
+
+
+#profilheader {
+      background-color: blue;
+      display: inline-block;
+      width: 82%;
+      height: 200px;
+      border: 1px solid blue;
+      vertical-align: top;
+
+}
+
+.profilinfo {
+height: 539px;
+width: 99.5%;
+background-color: white;
+display: inline-block;
+margin-top: 17%;
+margin-right: 100px;
+vertical-align: top;
+
+
+}
