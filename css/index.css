@@ -99,20 +99,28 @@ position: sticky;
 
 /* Insp fra W3 schools */
 
-
-
-
-
-.taeller {
-  height: 40px;
-  width: 40px;
-  position: fixed;
+.drivhus {
   color: white;
-justify-content: center;
+  width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: center;
 }
 
 
 
+
+#taeller {
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
 
 
 .logo-one img {
