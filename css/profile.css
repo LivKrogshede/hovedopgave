@@ -87,11 +87,38 @@ h3 {
   height: 73%;
   width: 82%;
   background-color: white;
+  opacity: %;
   display: flex;
   float: right;
   vertical-align: top;
   border: 2px solid cyan;
 }
+
+#usernamepr {
+
+  height: 75px;
+  width: 75px;
+  border-color: black;
+  border-radius: 50%;
+  border: 5px solid black;
+  margin-left: 100px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+#ratingpr {
+
+display: inline-block;
+width: 500px;
+height: 100px;
+margin-left: 100px;
+margin-top: 50px;
+
+}
+
+
+
+
 
 .pr-right {
   display: flex;
@@ -106,7 +133,6 @@ h3 {
   display: flex;
   float: right;
   width: 100%;
-  height: 200px;
-  vertical-align: top;
-  opacity: 75%;
+  height: 100%;
+  opacity: 100%;
 }
