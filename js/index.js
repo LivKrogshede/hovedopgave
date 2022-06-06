@@ -8,11 +8,6 @@ index.luk = index.luk || function(){
     document.getElementById('menu').classList.toggle("hidden")
 };
 
-
-
-
-
-
 /* counter til Co2-udledning */
 
 index.updated = function() {
@@ -25,11 +20,6 @@ index.updated = function() {
 
 index.counts = index.counts || setInterval(index.updated)
 index.fra = index.fra || 0;
-
-
-
-
-
 
   /* process bar */
 
