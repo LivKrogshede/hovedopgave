@@ -8,7 +8,6 @@ index.luk = index.luk || function(){
 };
 /* Kilde mangler */
 
-
 /* counter til Co2-udledning */
 index.updated = function() {
     var taeller = document.getElementById("taeller");
