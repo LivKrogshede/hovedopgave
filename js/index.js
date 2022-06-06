@@ -1,15 +1,15 @@
 
 
 /* lavet af Christian */
-
 var index = window.index || {};
 /* toggler menu i øverste venstre hjørne */
 index.luk = index.luk || function(){
     document.getElementById('menu').classList.toggle("hidden")
 };
+/* Kilde mangler */
+
 
 /* counter til Co2-udledning */
-
 index.updated = function() {
     var taeller = document.getElementById("taeller");
     if (taeller) taeller.innerHTML = ++index.fra;
@@ -22,9 +22,7 @@ index.counts = index.counts || setInterval(index.updated)
 index.fra = index.fra || 0;
 
   /* process bar */
-
   var number = 0;
-
   index.move = function() {
     var elem = document.getElementById("myBar");
     number++;
@@ -80,7 +78,6 @@ index.fra = index.fra || 0;
       document.getElementById('barbutton').className = 'hidden';
     }
   }
-
 
   window.index = index;
 /* med inspiration fra https://stackoverflow.com/questions/51691703/onclick-progression-bar */

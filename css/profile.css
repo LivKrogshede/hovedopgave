@@ -1,18 +1,3 @@
-/*
-.dots {
-    position: relative;
-    height: 10px;
-    width: 10px;
-    background: white;
-    border-radius: 50px;
-    display: block;
-    padding: 1px;
-    margin-top: 5px;
-    margin: 10px;
-    margin-left: 10px;
-
-}  */
-
 
 #profilewrapper {
   border: 5px solid yellow;
@@ -31,7 +16,6 @@
   text-align: center;
   justify-content: center;
 
-
 }
 
 h3 {
@@ -39,8 +23,6 @@ h3 {
   font-style: italic;
   margin-top: 10px;
   text-align: center;
-
-
 }
 
 
@@ -72,16 +54,6 @@ h3 {
 
 }
 
-/*
-#profilheader {
-  background-color: blue;
-  display: inline-block;
-  width: 82%;
-  height: 200px;
-  border: 1px solid blue;
-  vertical-align: top;
-
-}*/
 
 .profilinfo {
   height: 73%;
@@ -95,7 +67,6 @@ h3 {
 }
 
 #usernamepr {
-
   height: 75px;
   width: 75px;
   border-color: black;
@@ -107,16 +78,13 @@ h3 {
 }
 
 #ratingpr {
-
-display: inline-block;
-margin-top: 75px;
-margin-left: 200px;
-width: 500px;
-height: 100px;
-
+  display: inline-block;
+  margin-top: 75px;
+  margin-left: 200px;
+  width: 500px;
+  height: 100px;
 
 }
-
 
 .listpr {
   width: 250px;
@@ -125,7 +93,7 @@ height: 100px;
   position: absolute;
   margin-top: 150px;
   margin-left: 40px;
-  border: 5px solid pink;
+  border: 1px solid black;
 
 }
 
@@ -134,9 +102,8 @@ height: 100px;
   text-align: left;
   color: black;
   font-family: inherit;
-padding: 12px;
+  padding: 12px;
 }
-
 
 .pr-right {
   display: flex;
@@ -156,8 +123,6 @@ padding: 12px;
 }
 
 .statusrating {
-width: 100px;
-height: 100px;
-
-
+  width: 100px;
+  height: 100px;
 }
